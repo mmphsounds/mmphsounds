@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Rakkas);
+
+.main { margin: 0px; font-size: 16px; font-family: 'Indie-Ilower'; cursive; }
+
+body {
+    margin: 0px;
+}
+
+li {	
+	font-family: "rakkas";
+	font-weight: bold;
+	font-size: 30px;
+	float: right;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grayscale;
+    position: fixed;
+    top: 0;
+    width: auto;
+
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.active {
+    background-color: grayscale;
+  }
+
+li a:hover:not(.active) {
+    background-color: white;
+    
+}
+
+.main video { 
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 300px;
+	height: auto;
+	z-index: -10;
+	animation-play-state: repeat;
+}
+
+.main img {  
+	width: 200px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: 50px
+}
+
+@media screen and (max-width: 700px) {
+	.main img { top: 15px; width: 120px; margin-left: -60px; }
+
+}
+
+@media screen and (max-width: 450px) {
+
+	.main {
+		
+		margin: 15px;
+		padding: 175px 0px 40px 0px;
+		border: 1px solid #fff;
+		background: url(muffins.jpg) no-repeat center bottom;
+		background-size: cover;
+
+	}
+
+	.main video { display: none; }
+	.main img { top: 15px; width: 90px; margin-left: -45px; }
+
+}
